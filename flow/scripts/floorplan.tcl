@@ -197,5 +197,6 @@ if {[env_var_exists_and_non_empty IO_CONSTRAINTS]} {
   log_cmd source $::env(IO_CONSTRAINTS)
 }
 
+read_upf -file /home/vishnu-cvc/work/or_p2f/OpenROAD-flow-scripts/tools/OpenROAD/src/p2f/test/input.upf
 write_db $::env(RESULTS_DIR)/2_1_floorplan.odb
 write_sdc -no_timestamp $::env(RESULTS_DIR)/2_1_floorplan.sdc
